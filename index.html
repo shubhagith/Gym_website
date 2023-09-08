@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shubha fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /*css reset*/
+        body{
+        color:white;
+        margin: 0px;
+        padding :0px;
+        background: url("img/women.jpg");  
+        height:900px;  
+        font-style: oblique;
+        font-weight: bold;
+    }
+    .left{
+    display:inline-block;
+    /*border:2px solid red;*/
+    position:absolute;
+    left:60px;
+    top:30px;
+    }
+    .mid{
+        display:block;
+        width:50%;
+        margin:20px auto;
+        /*border:2px solid green;*/
+    }
+    .right{
+        position:absolute;
+        right:34px;
+        top:20px;
+        display:inline-block;
+        /*border:2px solid yellow;*/
+    }
+    .navbar{
+        display:inline-block;
+    }
+    .navbar li{
+        display:inline-block;
+        font-size:20px;
+    }
+    .navbar li a{
+        color:blue;
+        text-decoration:none;
+        padding:20px 23px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active{
+        text-decoration:underline;
+        color:aqua;
+    }
+    .left img{
+        width:90px;
+    }
+    .btn{
+    background: #ff4321;
+    border-radius: 4px;
+    padding:10px 10px;
+    text-decoration:none;
+    color:#fff;
+    display:inline-block;
+    border:1px solid transparent;
+    transition:all 0.4s ease;
+}
+    .btn:hover{
+        background-color:aquamarine;
+    }
+    .container{
+       /* border:2px solid green;*/
+        margin:106px 80px;
+        padding:75px;
+        width:33%;
+        border-radius:25px;
+        color:black;
+    }
+    .form-group input{
+        font-family:'Baloo Bhai',cursive;
+        text-align:center;
+        display:block;
+        padding:1px;
+        border:2px solid beige;
+        font-style: oblique;
+        margin:11px auto;
+        font-size: medium;
+        border-radius:8px ;
+        background-color: aqua;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container button{
+        display:block;
+        width:75%;
+        margin:20px auto;
+        color:brown;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+        <img src="img\logo1.png" alt="">
+        <div>shubha fitness</div>
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>  
+            </ul>
+        </div>
+        <!--right box for bottons-->
+        <div class="right">
+            <botton class="btn">Contact Now</botton>
+            <botton class="btn">Email Us</botton>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym of Delhi Now</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+                <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Phone no">
+            </div>
+            <div>
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
